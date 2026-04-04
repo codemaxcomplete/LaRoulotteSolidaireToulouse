@@ -29,7 +29,7 @@ La roulotte est un symbole fort :
 
 ---
 
-##$ 🤝 Nos actions
+### 🤝 Nos actions
 
 🥣 Vestiaires solidaires
 Distribution de boissons chaudes, couvertures, vêtements et kits d’hygiène.
