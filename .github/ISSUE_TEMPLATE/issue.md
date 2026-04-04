@@ -59,4 +59,8 @@ Si tu veux participer à la résolution, indique-le ici :
 
 ---
 
+❤️ Remarques supplémentaires
+Ajoute ici tout élément utile pour faciliter la résolution.
+`
 
+---
