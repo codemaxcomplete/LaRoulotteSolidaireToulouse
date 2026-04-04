@@ -1,16 +1,15 @@
 README.md 
 
 # 🛠️ Dossier SCRIPTS  
-*Outils internes, automatisations simples et utilitaires pour le projet*
+`*Outils internes, automatisations simples et utilitaires pour le projet*`
 
-Ce dossier contient les **scripts internes** utilisés pour faciliter l’organisation, la gestion ou la maintenance du projet.  
+> Ce dossier contient les **scripts internes** utilisés pour faciliter l’organisation, la gestion ou la maintenance du projet.  
 Ils ne sont pas obligatoires, mais peuvent aider à structurer certaines tâches répétitives.
 
 ---
 
 ## 🗂️ Organisation du dossier
 - Créer, éditer et monter
-
 
 ---
 
@@ -28,8 +27,7 @@ Ils ne sont pas obligatoires, mais peuvent aider à structurer certaines tâches
 - automatiser des tâches répétitives
 
 ### ✔️ Panneau de configuration 
-- créer et gérer des compte bénévoles
-- creer et gérer des comptes bénéficiaires 
+- créer et gérer des comptes `bénévoles et bénéficiaires`
 
 ### ✔️ Automatisation (optionnel)
 - génération de rapports  
@@ -59,4 +57,4 @@ Ils ne sont pas obligatoires, mais peuvent aider à structurer certaines tâches
 
 ## ❤️ Merci
 
-Merci à celles et ceux qui créent des outils pour faciliter le travail collectif.
+> Merci à celles et ceux qui créent des outils pour faciliter le travail collectif.
