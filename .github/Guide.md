@@ -1,4 +1,4 @@
-📄 README.md
+📄 README - Guide.md
 
 🧩 Dossier .github/
 Configuration, templates, automatisations et outils communautaires du projet
