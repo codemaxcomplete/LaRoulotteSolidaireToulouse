@@ -68,15 +68,7 @@ Les dons permettent d’acheter nourriture, matériel, équipements et d’entre
 ---
 
 ### 📦 Structure du dépôt
-
-`
-.
-├── docs/                # Documentation, affiches, supports de communication
-├── images/              # Photos, logos, visuels
-├── actions/             # Comptes-rendus, organisation des maraudes
-├── scripts/             # Outils internes (si existants)
-└── README.md            # Ce fichier
-`
+- A consulter et naviguer 
 
 ---
 
@@ -98,28 +90,5 @@ Les dons permettent d’acheter nourriture, matériel, équipements et d’entre
 - Bienveillance  
 - Solidarité citoyenne  
 - Transparence
-
----
-
-### 📬 Contact
-
-- Email : laroulottesolidaire@gmail.com
-- Instagram : `null` 
-- Facebook : `null`
-- Site web : `null`
-
----
-
-###📄 Licence
-
-> Ce projet est publié sous `licence MIT`.
-
----
-
-# ❤️ Remerciements
-
-> Merci à tous les bénévoles, donateurs, partenaires et citoyens qui rendent cette initiative possible.  
-La solidarité est un mouvement collectif — chaque geste compte.
-`
 
 ---
