@@ -1,5 +1,6 @@
 # 📘 Guide du Bénévole  
-*La Roulotte Solidaire Toulouse*
+`- version 1.0`
+- *La Roulotte Solidaire Toulouse*
 
 Bienvenue dans l’équipe !  
 Ce guide te donne toutes les informations essentielles pour participer sereinement aux actions de la Roulotte Solidaire Toulouse.
