@@ -1,7 +1,9 @@
-🧹 maintenance/ — Scripts de Maintenance
-La Roulotte Solidaire Toulouse
+# 🧹 Maintenances
+- Scripts de Maintenance
+- La Roulotte Solidaire Toulouse
 
-Le dossier maintenance/ regroupe l’ensemble des scripts dédiés à la maintenance technique, à la fiabilisation du système, à la surveillance, et à la prévention des erreurs.  
+> Le dossier Maintenances/ :
+egroupe l’ensemble des scripts dédiés à la maintenance technique, à la fiabilisation du système, à la surveillance, et à la prévention des erreurs.  
 Ces outils assurent la stabilité du projet, la qualité des données et la continuité des opérations.
 
 Ils sont conçus pour être :  
@@ -25,34 +27,8 @@ Les scripts de maintenance servent à :
 ---
 
 🗂️ Structure recommandée
+- Créer, éditer et monter
 
-`plaintext
-maintenance/
-│
-├── README.md
-│
-├── diagnostics/
-│   ├── check_env.sh              # Vérification de l’environnement
-│   ├── check_permissions.sh      # Vérification des droits d’accès
-│   ├── check_integrity.sh        # Vérification des fichiers/données
-│   └── system_report.sh          # Rapport complet du système
-│
-├── nettoyage/
-│   ├── clean_temp.sh             # Nettoyage des fichiers temporaires
-│   ├── clean_logs.sh             # Rotation et purge des logs
-│   └── normalize_data.sh         # Normalisation des données JSON/CSV
-│
-├── sauvegarde/
-│   ├── backup_full.sh            # Sauvegarde complète
-│   ├── backup_data.sh            # Sauvegarde des données
-│   └── restore.sh                # Restauration depuis une sauvegarde
-│
-└── modules/
-    ├── logs.sh                   # Système de logs unifié
-    ├── validation.sh             # Vérification des entrées
-    ├── json.sh                   # Manipulation JSON
-    └── outils.sh                 # Fonctions utilitaires
-`
 
 ---
 
