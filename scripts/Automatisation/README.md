@@ -1,8 +1,8 @@
 ⚙️ Automatisation
-Scripts d’Automatisation
-La Roulotte Solidaire Toulouse
+> Scripts d’Automatisation
+- La Roulotte Solidaire Toulouse
 
-Ce dossier regroupe l’ensemble des scripts d’automatisation utilisés pour orchestrer, fiabiliser et accélérer les opérations internes de La Roulotte Solidaire Toulouse.  
+> Ce dossier regroupe l’ensemble des scripts d’automatisation utilisés pour orchestrer, fiabiliser et accélérer les opérations internes de La Roulotte Solidaire Toulouse.  
 Ces scripts permettent de réduire les tâches répétitives, d’éviter les erreurs humaines et d’assurer une gestion fluide des actions, des données et des outils.
 
 ---
