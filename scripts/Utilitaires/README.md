@@ -1,4 +1,5 @@
-📁 utilitaire/ — Scripts Utilitaires
+📁 Utilitaire/ 
+- Scripts Utilitaires
 La Roulotte Solidaire Toulouse
 
 Ce dossier regroupe l’ensemble des scripts utilitaires utilisés par La Roulotte Solidaire Toulouse pour automatiser, fiabiliser et accélérer les opérations quotidiennes : gestion des bénévoles, bénéficiaires, actions, données, sauvegardes, diagnostics, API, etc.
