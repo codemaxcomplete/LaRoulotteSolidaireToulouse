@@ -3,8 +3,8 @@
 - La Roulotte Solidaire Toulouse
 
 > Le dossier Maintenances/ :
-egroupe l’ensemble des scripts dédiés à la maintenance technique, à la fiabilisation du système, à la surveillance, et à la prévention des erreurs.  
-Ces outils assurent la stabilité du projet, la qualité des données et la continuité des opérations.
+- Ensemble des scripts dédiés à la maintenance technique, à la fiabilisation du système, à la surveillance, et à la prévention des erreurs.  
+- Ces outils assurent la stabilité du projet, la qualité des données et la continuité des opérations.
 
 Ils sont conçus pour être :  
 - simples à exécuter pour les bénévoles techniques  
