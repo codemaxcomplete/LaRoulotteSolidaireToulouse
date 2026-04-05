@@ -1,0 +1,23 @@
+# ============================================================
+# FUNDING.yml — La Roulotte Solidaire Toulouse
+# Liste des sponsors, partenaires et soutiens officiels
+# ============================================================
+
+# Plateformes de financement participatif (si activées plus tard)
+github: []
+patreon: []
+open_collective: []
+ko_fi: []
+liberapay: []
+custom:
+  # Partenaires officiels
+  - "https://www.intersport.fr/Haute-Garonne-31130/ROUFFIAC"
+  - "https://www.intersport.fr/Tarn-81000/ALBI"
+  - "https://www.intersport.fr/Tarn-81100/CASTRES"
+
+  # Soutiens institutionnels
+  - "https://www.toulouse-metropole.fr"
+  - "https://www.jeveuxaider.gouv.fr"
+
+  # Référencement social
+  - "https://www.coeur-de-ville.fr"
