@@ -1,0 +1,4 @@
+username,full_name,password,sudo,shell
+alice, Alice Dupont, P@ssw0rd, no, /bin/bash
+bob, Bob Martin, S3cur3!, yes, /bin/bash
+charlie, Charlie L., , no, /bin/sh
