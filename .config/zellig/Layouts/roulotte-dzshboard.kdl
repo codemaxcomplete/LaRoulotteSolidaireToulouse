@@ -1,1 +1,21 @@
-
+layout {
+  pane size=1 borderless=true {
+    plugin location="zellij:tab-bar"
+  }
+  pane split_direction="vertical" {
+    pane {
+      command "fastfetch"
+    }
+    pane split_direction="horizontal" {
+      pane {
+        command "btop"
+      }
+      pane {
+        command "bash -lc 'tail -n 200 ~/.local/share/roulotte-termux/logs/*.log | sed -n \"1,200p\"; sleep 99999'"
+      }
+    }
+  }
+  pane {
+    command "bash -lc 'cd ~/roulotte && ls -la; sleep 99999'"
+  }
+}
