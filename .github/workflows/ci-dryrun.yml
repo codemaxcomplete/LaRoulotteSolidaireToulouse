@@ -1,0 +1,42 @@
+name: CI Dry Run and Lint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ShellCheck
+        uses: ludeeus/action-shellcheck@v1
+        with:
+          args: |
+            scripts/mobile/*.sh
+      - name: Run shellcheck manually
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y shellcheck
+          shellcheck scripts/mobile/*.sh
+
+  dry-run:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup environment
+        run: |
+          mkdir -p $HOME/.local/share/roulotte-termux/logs
+      - name: Run install script dry-run
+        run: |
+          bash scripts/mobile/install_termux_godmode.sh --profile standard --dry-run --verbose > $GITHUB_WORKSPACE/dryrun_output.txt 2>&1 || true
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: dryrun-logs
+          path: |
+            dryrun_output.txt
+            $HOME/.local/share/roulotte-termux/logs/*.log
