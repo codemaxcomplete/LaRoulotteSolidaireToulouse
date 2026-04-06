@@ -36,3 +36,15 @@ Format basé sur Keep a Changelog — Versionnage SemVer
 ### Corrigé
 - Normalisation des chemins et permissions
 - Corrections mineures dans les scripts Bash
+-
+
+## [1.2.0] - YYYY-MM-DD
+### Added
+- Observability module with JSON logs and post_install summary.
+- Zellij dashboard layout roulotte-dashboard.
+- Terrain forms and capture scripts.
+- CI workflow for dry-run and shellcheck.
+### Changed
+- Hooks system extended.
+### Fixed
+- Improved logging and error detection.
