@@ -1,4 +1,4 @@
-# Roadmap — La Roulotte Solidaire Toulouse
+# `Roadmap — La RST`
 
 ---
 
@@ -28,7 +28,7 @@
 
 ---
 
-## 🟩 Version 1.0.0_stableRC —Automatisation,fluidifier.
+## 🟩 Version 1.0.0_stableRC —Automatisation, fluidifier
 
 ### Contenu prévu
 -l'Automatisaiion CRON tes scrépts de maintenance
@@ -41,7 +41,7 @@
 ---
 
 ## 🟩 Version 1.2.0 — Expérience & Accessibilité
-Objectif : rendre tout plus simple, plus beau, plus accessible.
+Objectif : rendre tout plus simple, plus beau, plus accessible
 
 ### Contenu prévu
 - Interface TUI Textual (Python)
