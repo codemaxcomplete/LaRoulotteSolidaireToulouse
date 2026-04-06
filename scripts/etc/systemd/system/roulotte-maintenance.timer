@@ -7,3 +7,8 @@ Persistent=true
 
 [Install]
 WantedBy=timers.target
+
+[Activate service]
+sudo systemctl daemon-reload
+sudo systemctl enable roulotte-maintenance.timer
+sudo systemctl start roulotte-maintenance.timer
