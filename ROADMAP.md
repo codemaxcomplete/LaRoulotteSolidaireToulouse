@@ -50,3 +50,47 @@ Objectif : rendre tout plus simple, plus beau, plus accessible
 - Notifications Telegram/Discord
 - Documentation illustrée (MULTIMÉDIA)
 - Mode “démo” pour les nouveaux bénévoles
+
+## 🟧 3. Roadmap 2.1.0 — Optimisation & Consolidation
+
+🎯 Objectifs
+- Optimiser les performances (TUI, sync, modules)  
+- Améliorer l’expérience bénévole  
+- Ajouter des statistiques avancées  
+- Renforcer la sécurité des données  
+
+📦 Livrables
+- Dashboard TUI v3.1  
+- Sync Cloud v3.1  
+- Statistiques avancées (graphes, tendances)  
+- Sécurité renforcée (hash, audit)  
+
+🧪 Tests
+- Tests de charge  
+- Tests multi‑équipes  
+- Tests de sécurité  
+
+---
+
+## 🟪 4. Roadmap 3.0.0 — Plateforme Complète
+
+🎯 Objectifs
+- Transformer l’outil en plateforme complète  
+- Interface web + API  
+- Gestion multi‑villes  
+- Comptes utilisateurs  
+- Statistiques globales  
+
+📦 Livrables
+- Plateforme web (v1)  
+- API REST  
+- Comptes utilisateurs  
+- Tableau de bord national  
+- Exports avancés  
+
+🧪 Tests
+- Tests API  
+- Tests multi‑villes  
+- Tests de montée en charge  
+
+---
