@@ -1,133 +1,78 @@
-📄 README - Guide.md
+# 📘 Documentation 2.0.0 — Guide Centralisé
 
-🧩 Dossier .github/
-Configuration, templates, automatisations et outils communautaires du projet
-
-Le dossier .github/ contient l’ensemble des outils internes de gestion du dépôt, notamment :
-
-- les templates d’issues  
-- les templates de pull requests  
-- les fichiers de configuration communautaire  
-- les workflows GitHub Actions (si utilisés)  
-- les politiques du projet (Code of Conduct, Security, etc.)
-
-Ce dossier permet d’assurer une organisation claire, une contribution fluide et une qualité constante dans le dépôt de La Roulotte Solidaire Toulouse.
+La Roulotte Solidaire évolue. Cette documentation 2.0.0 structure l'ensemble des ressources pour un déploiement fluide **multi-équipes** et **multi-villes**.
 
 ---
 
-🗂️ Structure du dossier
+## 🗺️ Architecture de la Documentation
 
-`
-.github/
-├── ISSUE_TEMPLATE/          # Templates pour créer des issues structurées
-│   ├── bug_report.md        # Rapport de problème
-│   ├── feature_request.md   # Proposition d'amélioration
-│   └── question.md          # Questions générales
-│
-├── pullrequesttemplate.md # Template pour les PR
-│
-├── CODEOFCONDUCT.md       # Règles de respect et de comportement
-├── SECURITY.md              # Politique de sécurité (optionnel)
-├── SUPPORT.md               # Comment obtenir de l'aide
-│
-└── workflows/               # GitHub Actions (optionnel)
-    └── *.yml
-`
+La documentation est désormais organisée par usage et par échelle :
 
-Chaque fichier a un rôle précis pour structurer la collaboration.
+
+docs/
+├── guides/                 # Guides opérationnels & stratégiques
+│   ├── multi_equipes.md    # Coordination inter-équipes
+│   └── multi_villes.md     # Déploiement & gestion multi-sites
+├── procedures/             # SOPs & checklists terrain
+├── materiel/               # Inventaires & maintenance
+├── communication/          # Charte & supports
+└── formation/              # Parcours d'intégration & tutoriels
+```
 
 ---
 
-📝 Templates d’issues
+## 👥 Guide Multi-Équipes
 
-Les templates permettent :
+Ce guide définit comment organiser la collaboration entre plusieurs équipes agissant sur un même périmètre.
 
-- d’éviter les issues vides ou imprécises  
-- de guider les contributeurs  
-- de faciliter la compréhension et la résolution  
+### 1. Structure & Rôles
+- **Coordinateur·rice** : Assure la liaison terrain / logistique / communication.
+- **Responsable d’axe** : Gère un domaine spécifique (maraudes, distributions, accompagnement).
+- **Bénévole opérationnel·le** : Applique les procédures et remonte les insights.
 
-Types d’issues recommandés
+### 2. Communication & Synchronisation
+- **Réunions courtes** : Points flash de 15 min avant/après action.
+- **Outils partagés** : Utilisation de canaux dédiés par axe.
+- **Transparence** : Tout compte-rendu est anonymisé et archivé dans `actions/comptes_rendus/`.
 
-- Bug Report → pour signaler un problème dans la documentation ou l’organisation  
-- Feature Request → pour proposer une amélioration  
-- Question → pour demander une information ou un éclaircissement  
-
-Les templates se trouvent dans :
-
-`
-.github/ISSUE_TEMPLATE/
-`
+### 3. Résolution de Conflits & Feedback
+- Remontée systématique via les templates `.github/ISSUE_TEMPLATE/`.
+- Validation croisée avant mise à jour des procédures.
 
 ---
 
-🔀 Template de Pull Request
+## 🌍 Guide Multi-Villes
 
-Le fichier :
+La duplication du modèle sur plusieurs villes nécessite une standardisation forte couplée à une adaptation locale.
 
-`
-.github/pullrequesttemplate.md
-`
+### 1. Principes de Déploiement
+- **Noyau commun** : Procédures de sécurité, charte éthique, structure de base des dossiers.
+- **Adaptation locale** : Chaque ville crée un sous-dossier `docs/cities/[nom_ville]/` pour spécificités géographiques, partenaires locaux et règlements.
 
-permet de :
-
-- structurer les contributions  
-- vérifier les points essentiels avant validation  
-- lier les issues correspondantes  
-- maintenir une qualité constante  
-
-Il encourage des PR propres, claires et faciles à relire.
+### 2. Coordination Inter-Villes
+- **Sync mensuelle** : Partage des retours terrain et optimisation des processus.
+- **Mutualisation** : Partage des templates, visuels et scripts validés au niveau central.
+- **Gouvernance** : Validation des modifications majeures par le noyau pilote avant dissémination.
 
 ---
 
-🛡️ Fichiers de politique du projet
+## 🛠️ Bonnes Pratiques & Contribution
 
-✔️ CODEOFCONDUCT.md
-Règles de respect, bienveillance et sécurité humaine.  
-Indispensable pour un projet associatif.
+### 🔒 Confidentialité & Éthique
+- Aucune donnée personnelle, visage identifiable ou lieu sensible non sécurisé.
+- Ton neutre, bienveillant et factuel.
 
-✔️ SECURITY.md (optionnel)
-Procédure pour signaler un problème technique ou organisationnel sensible.
+### 📦 Cycle de vie d'un document
+1. **Brouillon** → `docs/drafts/`
+2. **Revue** → PR + checklist `.github/PULL_REQUEST_TEMPLATE.md`
+3. **Validation** → Archivage dans le dossier cible + mise à jour du changelog
 
-✔️ SUPPORT.md (optionnel)
-Explique comment obtenir de l’aide, poser des questions ou rejoindre le projet.
-
----
-
-⚙️ Workflows GitHub Actions (optionnel)
-
-Si le projet utilise des automatisations, elles se trouvent dans :
-
-`
-.github/workflows/
-`
-
-Exemples possibles :
-
-- vérification de la structure du dépôt  
-- validation de la documentation  
-- génération automatique de rapports  
-- linting de scripts internes  
-
-Pour un projet associatif, ces workflows sont optionnels, mais peuvent améliorer la qualité.
+### 🤝 Contribuer
+- Utilisez les templates d’issues (`.github/ISSUE_TEMPLATE/`).
+- Liez vos PR aux issues (`#numéro`).
+- Respectez scrupuleusement la structure et le Code de Conduct.
 
 ---
 
-🧭 Bonnes pratiques pour contribuer via .github/
-
-- utiliser les templates fournis  
-- lier les issues aux PR  
-- respecter le Code of Conduct  
-- documenter clairement les changements  
-- éviter les modifications non discutées  
-- maintenir une communication bienveillante  
-
----
-
-❤️ Merci
-
-Merci à toutes celles et ceux qui contribuent à structurer, organiser et améliorer le projet.  
-Le dossier .github/ est un pilier essentiel pour garantir une collaboration saine, efficace et durable.
-
-`
-
----
+> 📌 *Cette documentation est vivante. Elle évoluera avec les retours terrain et les besoins des équipes.*  
+> 🙏 Merci pour votre engagement et votre rigueur au service de la solidarité.
