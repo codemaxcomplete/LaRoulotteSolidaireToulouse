@@ -129,3 +129,17 @@ Ajoute ici des captures de documents, visuels, schémas, etc.
 
 # ❤️ 10. Remarques finales
 Ajoute ici tout élément utile pour faciliter la revue.
+
+
+## Description version 1.2.0
+Résumé des changements.
+
+## Type de changement
+- [ ] Bugfix
+- [ ] Nouvelle fonctionnalité
+- [ ] Documentation
+
+## Checklist
+- [ ] Tests locaux passés (--dry-run)
+- [ ] ShellCheck OK
+- [ ] CHANGELOG mis à jour
