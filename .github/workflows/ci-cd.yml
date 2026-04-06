@@ -1,0 +1,102 @@
+name: CI/CD & Automatisation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  lint:
+    name: Lint & Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Run ShellCheck
+        run: find . -type f -name "*.sh" -exec shellcheck {} +
+      - name: Markdown Lint
+        uses: DavidAnson/markdownlint-cli2-action@v15
+        with:
+          globs: '**/*.md'
+
+  test:
+    name: Tests Automatisés
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Environment
+        run: mkdir -p $HOME/.local/share/roulotte-termux/logs
+      - name: Bash Syntax Check
+        run: find scripts/ -type f -name "*.sh" -exec bash -n {} \;
+      - name: Run Dry-Run Tests
+        run: |
+          if [ -f scripts/mobile/install_termux_godmode.sh ]; then
+            bash scripts/mobile/install_termux_godmode.sh --profile standard --dry-run --verbose > $GITHUB_WORKSPACE/dryrun_output.txt 2>&1 || true
+          fi
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: |
+            $GITHUB_WORKSPACE/dryrun_output.txt
+            $HOME/.local/share/roulotte-termux/logs/*.log
+
+  generate:
+    name: Génération Automatique
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Auto-generate Documentation & Report
+        run: |
+          echo "# 📊 Rapport d'automatisation v2.0.0" > automation_report.md
+          echo "- Date: $(date -u)" >> automation_report.md
+          echo "- Commit: ${{ github.sha }}" >> automation_report.md
+          echo "- Auteur: ${{ github.actor }}" >> automation_report.md
+          echo "" >> automation_report.md
+          echo "## 📜 Statistiques du projet" >> automation_report.md
+          find . -name "*.sh" -exec wc -l {} + | sort -nr >> automation_report.md
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: automation-report
+          path: automation_report.md
+
+  deploy:
+    name: Pipeline de Déploiement
+    runs-on: ubuntu-latest
+    needs: [test, generate]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: automation-report
+      - name: Create GitHub Release Draft
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          tag_name: v2.0.0
+          name: Release v2.0.0 - Automatisation & CI/CD
+          body_path: automation_report.md
+          files: |
+            scripts/**/*
+            docs/**/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deployment Summary
+        run: |
+          echo "✅ Pipeline terminé avec succès."
+          echo "📦 Release draft créé pour v2.0.0"
+          echo "🔗 https://github.com/${{ github.repository }}/releases"
