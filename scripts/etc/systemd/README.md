@@ -40,4 +40,24 @@ Redémarre proprement :
 ## Utilisation
 
 Installation :
+`
+bash installsystemdservices.sh
+`
 
+Vérification :
+`
+bash checksystemdstatus.sh
+`
+
+Désinstallation :
+`
+bash uninstallsystemdservices.sh
+`
+
+Redémarrage :
+`
+bash restartsystemdservices.sh
+`
+`
+
+---
