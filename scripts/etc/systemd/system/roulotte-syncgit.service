@@ -1,0 +1,13 @@
+[Unit]
+Description=Synchronisation Git automatique - La Roulotte Solidaire Toulouse
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/USERNAME/roulotte/scripts/maintenance/sync_git.sh
+WorkingDirectory=/home/USERNAME/roulotte/
+StandardOutput=append:/home/USERNAME/roulotte/logs/systemd/syncgit.log
+StandardError=append:/home/USERNAME/roulotte/logs/systemd/syncgit_error.log
+
+[Install]
+WantedBy=multi-user.target
